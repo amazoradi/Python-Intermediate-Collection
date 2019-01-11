@@ -9,7 +9,7 @@ songs = {
   ('Metallica', 'Master of Puppets')
 }
 
-good_songs = {f'({artist}, {title})' for (artist, title) in songs if artist != "Nickelback" }
+good_songs = {f'{artist}, {title}' for (artist, title) in songs if artist != "Nickelback" }
 
 print("death to Nickeback:", good_songs)
 # Using a set comprehension, create a new set that contains all songs that were not performed by Nickelback.
